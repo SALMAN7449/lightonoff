@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <body style="font-family: calibri;text-align: center;">
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<script>
+        function light(sw) {
+          var pic;
+          if (sw == 0) {
+            pic = "off.jpg"
+          } else {
+            pic = "on.jpg"
+          }
+          document.getElementById('myImage').src = pic;
+        }
+        </script>
+        <img id="myImage" src="off.jpg" width="850" height="365">
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+      
+
+</body>
+</html>
